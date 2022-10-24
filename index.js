@@ -9,8 +9,9 @@ app.use(cors());
 
 const hotels = require('./data/hotels.json')
 
+
 app.get('/', (req , res)=>{
-    res.send('The server is running on port')
+    res.send(hotels)
 })
 
 
